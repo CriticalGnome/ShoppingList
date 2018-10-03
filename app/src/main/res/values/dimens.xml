@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="listTitlePadding">10dp</dimen>
+    <dimen name="listBodyPadding">5dp</dimen>
+    <dimen name="listItemLeftRightMargin">5dp</dimen>
+    <dimen name="ListItemNameFontSize">16sp</dimen>
+    <dimen name="ListItemDescriptionFontSize">12sp</dimen>
+    <dimen name="ListItemVerticalMargin">10dp</dimen>
+    <dimen name="ListItemVerticalMarginSmall">2dp</dimen>
+</resources>
