@@ -4,6 +4,12 @@ import com.criticalgnome.shoppinglist.R
 
 object Pool {
 
+    val categories = mutableListOf(
+            ItemCategory(1, "Мясо", R.color.white),
+            ItemCategory(2, "Молоко", R.color.white),
+            ItemCategory(3, "Выпечка", R.color.extraLightGray)
+    )
+
     val items = mutableListOf(
             ListItem("Свинина", "", 0, getCategory(1)),
             ListItem("Говядина", "", 0, getCategory(1)),
@@ -19,12 +25,6 @@ object Pool {
 
     fun addItem(item: ListItem) = items.add(item)
     fun getItems(name: String) = items.filter { it.name.contains(name) }
-
-    val categories = mutableListOf(
-            ItemCategory(1, "Мясо", R.color.white),
-            ItemCategory(2, "Молоко", R.color.white),
-            ItemCategory(3, "Выпечка", R.color.extraLightGray)
-    )
 
     fun addCategory(category: ItemCategory) = categories.add(category)
     fun getCategory(id: Long) = categories.find { it.id == id }

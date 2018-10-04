@@ -7,4 +7,5 @@
     <dimen name="ListItemDescriptionFontSize">12sp</dimen>
     <dimen name="ListItemVerticalMargin">10dp</dimen>
     <dimen name="ListItemVerticalMarginSmall">2dp</dimen>
+    <dimen name="HeaderFontSize">20sp</dimen>
 </resources>

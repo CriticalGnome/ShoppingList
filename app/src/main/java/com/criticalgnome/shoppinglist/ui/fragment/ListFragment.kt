@@ -1,20 +1,22 @@
-package com.criticalgnome.shoppinglist
+package com.criticalgnome.shoppinglist.ui.fragment
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
-import com.criticalgnome.shoppinglist.model.ItemCategory
+import android.view.ViewGroup
+import com.criticalgnome.shoppinglist.R
 import com.criticalgnome.shoppinglist.model.ListItem
 import com.criticalgnome.shoppinglist.model.Pool
-import kotlinx.android.synthetic.main.activity_list.*
-import org.jetbrains.anko.toast
+import com.criticalgnome.shoppinglist.ui.adapter.ListItemAdapter
+import kotlinx.android.synthetic.main.fragment_list.*
 
-class ListActivity : AppCompatActivity() {
+class ListFragment: BaseFragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
+            inflater.inflate(R.layout.fragment_list, container, false)
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         listTitle.text = "Список покупок 1.09.2018"
 
@@ -51,9 +53,9 @@ class ListActivity : AppCompatActivity() {
         )
         val adapter = ListItemAdapter(items)
         listBody.adapter = adapter
+    }
 
-        fab.setOnClickListener {
-            toast("FAB button pressed")
-        }
+    companion object {
+        const val tag = "List Fragment"
     }
 }

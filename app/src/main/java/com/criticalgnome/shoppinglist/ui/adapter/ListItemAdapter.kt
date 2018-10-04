@@ -1,10 +1,11 @@
-package com.criticalgnome.shoppinglist
+package com.criticalgnome.shoppinglist.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.criticalgnome.shoppinglist.R
 import com.criticalgnome.shoppinglist.model.ListItem
 import kotlinx.android.synthetic.main.list_item.view.*
 
