@@ -7,4 +7,10 @@
     <string name="header">Header</string>
     <string name="remove_crossed_out">Remove crossed out</string>
     <string name="undo_crossing_out">Undo crossing out</string>
+    <string name="nav_item1">Navigation item 1</string>
+    <string name="nav_item2">Navigation item 2</string>
+    <string name="nav_item3">Navigation item 3</string>
+    <string name="nav1_clicked">Navigation drawer item 1 clicked</string>
+    <string name="nav2_clicked">Navigation drawer item 2 clicked</string>
+    <string name="nav3_clicked">Navigation drawer item 3 clicked</string>
 </resources>

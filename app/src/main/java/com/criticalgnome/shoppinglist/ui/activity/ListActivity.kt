@@ -7,7 +7,9 @@ import android.view.View
 import com.criticalgnome.shoppinglist.R
 import com.criticalgnome.shoppinglist.model.Pool
 import com.criticalgnome.shoppinglist.ui.adapter.ListItemAdapter
+import com.criticalgnome.shoppinglist.ui.fragment.BottomNavigationDrawerFragment
 import kotlinx.android.synthetic.main.activity_list.*
+import org.jetbrains.anko.toast
 
 class ListActivity : BaseActivity() {
 
@@ -17,8 +19,6 @@ class ListActivity : BaseActivity() {
         setSupportActionBar(bottomAppBar)
 
         val items = Pool.items
-        items.addAll(Pool.items)
-        items.addAll(Pool.items)
         val adapter = ListItemAdapter(items)
         listRecycler.adapter = adapter
 
@@ -38,6 +38,14 @@ class ListActivity : BaseActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item?.itemId) {
+            android.R.id.home -> {
+                val bottomNavDrawerFragment = BottomNavigationDrawerFragment()
+                bottomNavDrawerFragment.show(supportFragmentManager, bottomNavDrawerFragment.tag)
+            }
+            R.id.deleteCrossedOut -> toast("Delete crossed out button pressed")
+            R.id.undoCrissongOut -> toast("Undo crossing out button pressed")
+        }
         return true
     }
 
