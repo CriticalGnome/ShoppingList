@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ShoppingList</string>
+    <string name="add_new_product">Add new product</string>
+    <string name="add_button">ADD</string>
+    <string name="description">Description</string>
+    <string name="count">Count</string>
+    <string name="header">Header</string>
+    <string name="remove_crossed_out">Remove crossed out</string>
+    <string name="undo_crossing_out">Undo crossing out</string>
 </resources>

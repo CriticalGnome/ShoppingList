@@ -20,7 +20,7 @@
             style="@style/header"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Add item"
+            android:text="@string/header"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
                 android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Add new product"
+                android:hint="@string/add_new_product"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -58,7 +58,7 @@
                 android:id="@+id/addToListButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="ADD"
+                android:text="@string/add_button"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 />
@@ -96,7 +96,7 @@
                 android:id="@+id/descriptionEditText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Description"
+                android:hint="@string/description"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -115,7 +115,7 @@
                 android:id="@+id/countEditText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Count"
+                android:hint="@string/count"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>

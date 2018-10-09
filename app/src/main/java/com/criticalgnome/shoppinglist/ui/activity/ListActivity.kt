@@ -1,6 +1,8 @@
 package com.criticalgnome.shoppinglist.ui.activity
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import com.criticalgnome.shoppinglist.R
 import com.criticalgnome.shoppinglist.model.Pool
@@ -12,6 +14,7 @@ class ListActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
+        setSupportActionBar(bottomAppBar)
 
         val items = Pool.items
         items.addAll(Pool.items)
@@ -27,6 +30,15 @@ class ListActivity : BaseActivity() {
             return@setOnTouchListener false
         }
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.list_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        return true
     }
 
     private fun setVisibilityOfAdditionalFields(isVisible: Boolean) {
